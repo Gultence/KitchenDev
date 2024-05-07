@@ -18,7 +18,7 @@ public class LoginPage {
     public WebElement password;
 
     @FindBy(xpath = "//button[.=' Login ']")
-    public WebElement loginbutton;
+    public WebElement loginButton;
 
     @FindBy(id = "m_aside_left_offcanvas_toggle")
     public WebElement left;
