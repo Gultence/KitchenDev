@@ -1,0 +1,4 @@
+"Name","Email","Street Address","Apartment Number","City","State","Zip Code","Phone","Website","Cost Multiplier","Default tax %","Retail Multiplier","Accounting ID","Series"
+"Company 1","info@company1.com","4145 Oak Ridge Drive","","Sikeston","MO","63801","111-222-333","www.company1.com","0.55","10.775","0.55","1-1","Series A,Series B"
+"Company 2","info@company2.com","668 Oakmound Road","","Chicago","IL","60605","222-333-444","www.company2.com","0.4","5","0.4","2-2","Series A"
+"Company 3","info@company3.com","4856 Pleasant Hill Road","","Miami","FL","33169","333-444-5555","www.company3.com","0.7","0","0.7","3-3","Series B"

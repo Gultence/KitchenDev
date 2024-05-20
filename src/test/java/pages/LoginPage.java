@@ -7,11 +7,9 @@ import utility.Driver;
 
 public class LoginPage {
 
-    public LoginPage(){
-        PageFactory.initElements(Driver.getDriver(),this);
-    }
+    public LoginPage(){PageFactory.initElements(Driver.getDriver(), this);}
 
-    @FindBy(xpath = "//input[@formcontrolname='email']")
+    @FindBy(xpath = "//input[@ type='email']")
     public WebElement email;
 
     @FindBy(xpath = "//input[@formcontrolname='password']")
