@@ -1,10 +1,13 @@
 package utility;
 
+import org.openqa.selenium.StaleElementReferenceException;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.time.Duration;
+import java.util.NoSuchElementException;
 
 public class Driver {
 
@@ -41,6 +44,7 @@ public class Driver {
                 case "chrome":
                     //WebDriverManager.chromedriver().setup();
                     driverPool.set(new ChromeDriver());
+
                     break;
                 case "firefox":
                     //WebDriverManager.firefoxdriver().setup();
@@ -51,6 +55,8 @@ public class Driver {
         }
 
         return driverPool.get();
+
+
 
     }
 
@@ -67,6 +73,22 @@ public class Driver {
             We assign the value back to "null" so that my "singleton" can create a newer one if needed.
              */
             driverPool.remove();
+        }
+    }
+
+    public static void wait(int secs) {
+        try {
+            Thread.sleep(1000L * secs);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (TimeoutException e) {
+            e.printStackTrace();
+        } catch (NoSuchElementException e) {
+            e.printStackTrace();
+        } catch (StaleElementReferenceException e) {
+            e.printStackTrace();
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 
