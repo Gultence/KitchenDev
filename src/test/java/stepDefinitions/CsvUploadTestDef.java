@@ -110,7 +110,7 @@ public class CsvUploadTestDef {
     @Then("user un-select all column")
     public void user_un_select_all_column() {
         dealer.idInDropDownList.click();
-        //dealer.idInDropDownList.click();
+        dealer.idInDropDownList.click();
         Assert.assertTrue(dealer.idOnTable.isDisplayed());
 
 
