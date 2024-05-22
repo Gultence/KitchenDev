@@ -4,16 +4,18 @@ import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import pages.LoginPage;
 import utility.BrowserUtils;
 import utility.ConfigurationReader;
 import utility.Driver;
 
 import java.util.concurrent.TimeUnit;
 
-import static org.apache.poi.ss.formula.CollaboratingWorkbooksEnvironment.setup;
 
 public class Hooks {
     //import the @Before coming from io.cucumber.java
+
+
     @Before (order = 1)
     public void setupMethod(){
 
@@ -26,6 +28,7 @@ public class Hooks {
     //@Before (value = "@login", order = 2 )
     public void login_scenario_before(){
         System.out.println("---> @Before: RUNNING BEFORE EACH SCENARIO");
+
     }
 
     /*
