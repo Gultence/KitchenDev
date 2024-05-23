@@ -45,10 +45,11 @@ public class editResources {
     @When("User click label button and made changes")
     public void user_click_label_button_and_made_changes() {
 
-
+        resources.Resources1.click();
         resources.LabelButton.click();
+
         resources.LabelButton.clear();
-        resources.LabelButton.sendKeys("Resource1");
+        resources.LabelButton.sendKeys("Hi");
         resources.saveButton.click();
 
     }
