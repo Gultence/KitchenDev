@@ -29,7 +29,7 @@ public class editResources {
         login.password.sendKeys(ConfigurationReader.getProperty("pass"));
         Driver.wait(2);
         login.loginButton.click();
-        Driver.wait(10);
+        Driver.wait(5);
 
         action.moveToElement(resources.resourceIcon).click().perform();
         Driver.wait(5);
@@ -45,7 +45,6 @@ public class editResources {
     @When("User click label button and made changes")
     public void user_click_label_button_and_made_changes() {
 
-        resources.Resources1.click();
         resources.LabelButton.click();
 
         resources.LabelButton.clear();

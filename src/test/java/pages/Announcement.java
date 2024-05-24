@@ -10,14 +10,6 @@ public class Announcement {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy(xpath="//*[@id=\"m_aside_left_minimize_toggle\"]")
-    public WebElement threeLine;
-
-    @FindBy(xpath="//*[@id=\"m_ver_menu\"]/ul/li[1]")
-    public WebElement dashSign;
-    @FindBy(xpath = "(//span[.=' Dashboard '])[1]")
-    public WebElement dashboard;
-
     @FindBy(xpath = "//*[@id=\"m_ver_menu\"]/ul/li[9]/a/i")
     public WebElement announcementName;
 
