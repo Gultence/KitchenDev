@@ -1,5 +1,5 @@
 @Resources
-Feature: Resource can.;/
+Feature: Resource
   User able to edit
 #@bug
  # Scenario: Edit to resource link
