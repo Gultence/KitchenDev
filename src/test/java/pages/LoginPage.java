@@ -27,6 +27,19 @@ public class LoginPage {
     @FindBy(xpath = "//div[.=' Invalid email / password combination ']")
     public WebElement alert;
 
+    @FindBy (xpath = "//a[@class='d-block']")
+    public WebElement forgetPassButton;
+
+    @FindBy (xpath = "//a[@href='/app/login']")
+    public WebElement dealerLogin;
+
+    @FindBy (xpath = "//div[.='visibility']")
+    public WebElement icon;
+
+
+
+
+
 
 
 }
