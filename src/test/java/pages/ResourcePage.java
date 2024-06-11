@@ -28,5 +28,8 @@ public class ResourcePage {
     @FindBy(xpath = "//button[.='Save']")
     public WebElement saveButton;
 
+    @FindBy(xpath = "//*[@id=\"mat-input-22\"]")
+   public WebElement searchBox;
+
 
 }
