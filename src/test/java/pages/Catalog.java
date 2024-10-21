@@ -17,5 +17,9 @@ public class Catalog {
     @FindBy(xpath = "//*[@id=\"m_ver_menu\"]/ul/li[7]/div/ul/li[5]/a/span")
     public WebElement Files_History;
 
+    @FindBy(xpath ="//i[@class='icon flaticon-edit text-primary'][1]")
+    public WebElement editIcon;
+
+
 
 }
